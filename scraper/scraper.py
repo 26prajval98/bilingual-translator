@@ -1,5 +1,15 @@
 import requests
+import re
 from bs4 import BeautifulSoup
+
+
+def remove_useless(s):
+    s = re.sub("[\(\[].*?[\)\]]", "", s)
+    s = re.sub("'.'[ ]*", ".", s)
+    s = re.sub("\n+", ".", s)
+    s = re.sub("[•?!,a-zA-Z:/\[\(\)\)]", "", s)
+    s = re.sub("[.]", "\n", s)
+    return s.strip()
 
 
 def get_article(url, set_links, arr_links, i):
@@ -7,14 +17,16 @@ def get_article(url, set_links, arr_links, i):
     sp = BeautifulSoup(wiki_page.content, 'lxml')
     article_text = ''
 
-    art = sp.find_all("p")
+    art = sp.find("div", {"id": "bodyContent"}).find_all("p")
 
     links = sp.find_all("a", href=True)
 
     i += 1
 
     for element in art:
-        article_text += ''.join(element.findAll(text=True))
+        txt = ''.join(element.findAll(text=True))
+        txt = remove_useless(txt)
+        article_text += txt
 
     for l in links:
         link = l['href']
@@ -25,7 +37,7 @@ def get_article(url, set_links, arr_links, i):
     return i, set_links, arr_links, article_text
 
 
-No_ARTICLES = 100
+No_ARTICLES = 10
 
 base_url = "https://kn.wikipedia.org"
 
@@ -44,8 +56,6 @@ while True:
     f.write(article)
 
     print("Progress = %d / %d" % (itr, No_ARTICLES))
-
-    print(arr_urls)
 
     if itr > No_ARTICLES or itr >= len(arr_urls):
         break
