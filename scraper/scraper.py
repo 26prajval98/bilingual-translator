@@ -2,14 +2,22 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
+blacklist = [
+        "script", "style",
+        "span", "br", "pre",
+        "table", "tbody", "thead", "tr", "td", "a",
+        "blockquote",
+        "ul", "li", "ol",
+        "b", "em", "i", "strong", "u", "font"
+        ]
+
 
 def remove_useless(s):
-    s = re.sub("[\(\[].*?[\)\]]", "", s)
-    s = re.sub("'.'[ ]*", ".", s)
-    s = re.sub("\n+", ".", s)
-    s = re.sub("[•?!,a-zA-Z:/\[\(\)\)]", "", s)
-    s = re.sub("[.]", "\n", s)
-    return s.strip()
+    s = re.sub("[•?!,a-zA-Z:/\[\(\)\]~=\-+\']", "", s)
+    s = re.sub("[\.]", "\n", s)
+    s = re.sub(' +', ' ', s)
+    s = re.sub("\n+", "\n", s)
+    return s
 
 
 def get_article(url, set_links, arr_links, i):
@@ -17,11 +25,15 @@ def get_article(url, set_links, arr_links, i):
     sp = BeautifulSoup(wiki_page.content, 'lxml')
     article_text = ''
 
-    art = sp.find("div", {"id": "bodyContent"}).find_all("p")
-
     links = sp.find_all("a", href=True)
 
     i += 1
+
+    for tag in sp.find_all():
+        if tag.name.lower() in blacklist:
+            tag.extract()
+
+    art = sp.find("div", {"id": "bodyContent"}).find_all("p")
 
     for element in art:
         txt = ''.join(element.findAll(text=True))
@@ -57,7 +69,7 @@ while True:
 
     print("Progress = %d / %d" % (itr, No_ARTICLES))
 
-    if itr > No_ARTICLES or itr >= len(arr_urls):
+    if itr >= No_ARTICLES or itr >= len(arr_urls):
         break
 
 f.close()
