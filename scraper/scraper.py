@@ -37,7 +37,7 @@ def get_article(url, set_links, arr_links, i):
     return i, set_links, arr_links, article_text
 
 
-No_ARTICLES = 10
+No_ARTICLES = 1000
 
 base_url = "https://kn.wikipedia.org"
 
