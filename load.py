@@ -9,5 +9,3 @@ for line in fin:
     tokens = line.rstrip().split(' ')
     print(u"" + tokens[0])
     data[tokens[0]] = map(float, tokens[1:])
-
-print("Hi")
