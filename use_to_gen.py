@@ -3,16 +3,16 @@ import copy
 import re
 
 
-def get_sentences(fname):
+def get_sentences(fname, file):
+    print("dataset :", fname)
     content = open(fname, "r", encoding="utf-8").read()
     content = re.sub(r"<fs.*>", "<fs/>", content)
 
     sp = BeautifulSoup(content, "html.parser")
 
     [sss.extract() for sss in sp("fs")]
-
-    sentences = []
-
+    p = 0
+    p_total = len(sp.find_all("sentence"))
     for ss in sp.find_all("sentence"):
         x = "".join(ss.findAll(text=True))
         x = re.sub(r"\t", "", x)
@@ -41,9 +41,11 @@ def get_sentences(fname):
                         ns = temp_sentences2[k]
                     temp_sentences.append(ns)
         # print(temp_sentences)
-        sentences = [*sentences, *temp_sentences]
-
-    return sentences
+        txt = "\n".join(temp_sentences)
+        file.write(txt)
+        p += 1
+        print("Progress ", p/p_total)
+    return
 
 
 data_sets = 1
@@ -53,7 +55,4 @@ f = open("dataset.txt", "a+", encoding="utf-8")
 
 for i in sets:
     # Change i here
-    s = get_sentences("data (" + str(3) + ").txt")
-    print(i)
-    txt = '\n'.join(s)
-    f.write(txt)
+    get_sentences("data (" + str(3) + ").txt", f)
