@@ -9,7 +9,7 @@ def get_sentences(fname):
 
     sp = BeautifulSoup(content, "html.parser")
 
-    [s.extract() for s in sp("fs")]
+    [sss.extract() for sss in sp("fs")]
 
     sentences = []
 
