@@ -53,7 +53,7 @@ f = open("dataset.txt", "a+", encoding="utf-8")
 
 for i in sets:
     # Change i here
-    s = get_sentences("data (" + str(i) + ").txt")
+    s = get_sentences("data (" + str(3) + ").txt")
     print(i)
     txt = '\n'.join(s)
     f.write(txt)
