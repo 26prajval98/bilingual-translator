@@ -1,0 +1,45 @@
+<Sentence id='112'>
+1	((	NP	<fs af=',,,,,,,' name='NP' drel='enm:VGF'>
+1.1	ಉದಾ	N__NN	<fs af='ಉದಾ,n,,sg,3,d,0,0' name='ಉದಾ'>
+1.2	:	RD__PUNC	<fs af=':,punc,,,,,,' name='symColon'>
+	))
+2	((	NP	<fs af=',,,,,,,' name='NP2' drel='k7:VGF'>
+2.1	ಅ2	N__NN	<fs af='ಅ2,n,,,,d,0,0' name='ಅ2'>
+2.2	ಸಂಕೇತದಲ್ಲಿ	N__NN	<fs af='ಸಂಕೇತ,n,,sg,3,o,ಅದ್+ಅ+ಅಲ್ಲಿ,ax+a+alli' name='ಸಂಕೇತದಲ್ಲಿ'>
+	))
+3	((	NP	<fs af=',,,,,,,' name='NP3' drel='k1:VGNN'>
+3.1	'	RD__PUNC	<fs af=',punc,,,,,,' name='>'>
+3.2	ಅ	N__NN	<fs af='ಅ,n,,,,d,0,0' name='ಅ'>
+3.3	'	RD__PUNC	<fs af=',punc,,,,,,' name='2'>
+	))
+4	((	VGNN	<fs af=',,,,,,,' name='VGNN' drel='k1:VGNF'>
+4.1	ಎನ್ನುವುದು	V__VM__VNG	<fs af='ಎನ್ನು,v,,,,,ಉವ್+ಉ+ಉದ್+ಉ,uv+u+ux+u' name='ಎನ್ನುವುದು'>
+	))
+5	((	NP	<fs af=',,,,,,,' name='NP4' drel='k1s:VGNF'>
+5.1	ಮೊಳೆ	N__NN	<fs af='ಮೊಳೆ,n,,sg,3,d,0,0' name='ಮೊಳೆ'>
+	))
+6	((	VGNF	<fs af=',,,,,,,' name='VGNF' drel='vmod:VGF'>
+6.1	ಆಗಿದ್ದು	V__VM__VNF	<fs af='ಆಗು,v,,,,,ಇ+ಇರು+ದ್ದ್+ಉ,i+iru+xx+u' name='ಆಗಿದ್ದು'>
+6.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=','>
+	))
+7	((	NP	<fs af=',,,,,,,' name='NP5' drel='k1:VGNN2'>
+7.1	ಸಂಖ್ಯೆ	N__NN	<fs af='ಸಂಖ್ಯೆ,n,,sg,3,d,0,0' name='ಸಂಖ್ಯೆ'>
+7.2	'	RD__PUNC	<fs af=',punc,,,,,,' name='3'>
+7.3	2	QT__QTC	<fs af='2,num,,pl,3,d,0,0' name='2'>
+7.4	'	RD__PUNC	<fs af=',punc,,,,,,' name='4'>
+	))
+8	((	VGNN	<fs af=',,,,,,,' name='VGNN2' drel='k1:VGF'>
+8.1	ಎನ್ನುವುದು	V__VM__VNG	<fs af='ಎನ್ನು,v,,,,,ಉವ್+ಉ+ಉದ್+ಉ,uv+u+ux+u' name='ಎನ್ನುವುದು2'>
+	))
+9	((	NP	<fs name='NP6' drel='k1s:VGF'>
+9.1	2	QT__QTC	<fs af='2,num,,pl,3,d,0,0' name='22'>
+9.2	ಅಂಗುಲ	N__NN	<fs af='ಅಂಗುಲ,n,,sg,3,d,0,0' name='ಅಂಗುಲ'>
+9.3	ಉದ್ದ	N__NN	<fs af='ಉದ್ದ,n,,sg,3,d,0,0' name='ಉದ್ದ'>
+	))
+10	((	VGF	<fs af=',,,,,,,' name='VGF' stype='declarative' voicetype='active'>
+10.1	ಇರಬಹುದು	V__VM__VF	<fs af='ಇರು,v,,,,,ಅ+ಬಹುದು,a+bahuxu' name='ಇರಬಹುದು'>
+	))
+11	((	BLK	<fs af=',,,,,,,' name='BLK' drel='rsym_eos:VGF'>
+11.1	.	RD__PUNC	<fs af='.,punc,,,,,,' name='.'>
+	))
+</Sentence>

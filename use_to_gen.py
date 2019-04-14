@@ -46,12 +46,13 @@ def get_sentences(fname):
     return sentences
 
 
-data_sets = 16
+data_sets = 1
 sets = [i+1 for i in range(data_sets)]
 
 f = open("dataset.txt", "a+", encoding="utf-8")
 
 for i in sets:
+    # Change i here
     s = get_sentences("data (" + str(i) + ").txt")
     print(i)
     txt = '\n'.join(s)
