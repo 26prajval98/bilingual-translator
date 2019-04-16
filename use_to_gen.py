@@ -30,16 +30,18 @@ def get_sentences(fname, file):
                 t = [""]
             if t[0] == ".":
                 break
+            # print(t[0])
             temp_sentences2 = copy.deepcopy(temp_sentences)
             temp_sentences = []
             for j in range(len(t)):
                 new_word = t[j]
-                for k in range(len(temp_sentences2)):
-                    if new_word != "":
-                        ns = temp_sentences2[k] + new_word + " "
-                    else:
-                        ns = temp_sentences2[k]
-                    temp_sentences.append(ns)
+                if new_word != ",":
+                    for k in range(len(temp_sentences2)):
+                        if new_word != "":
+                            ns = temp_sentences2[k] + new_word + " "
+                        else:
+                            ns = temp_sentences2[k]
+                        temp_sentences.append(ns)
         # print(temp_sentences)
         txt = "\n".join(temp_sentences)
         file.write(txt)
@@ -51,8 +53,8 @@ def get_sentences(fname, file):
 data_sets = 1
 sets = [i+1 for i in range(data_sets)]
 
-f = open("dataset.txt", "a+", encoding="utf-8")
+f = open("dataset (2).txt", "a+", encoding="utf-8")
 
 for i in sets:
     # Change i here
-    get_sentences("data (" + str(3) + ").txt", f)
+    get_sentences("data (" + str(12) + ").txt", f)
