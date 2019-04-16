@@ -1,5 +1,3 @@
-# https://www.shabdkosh.com/search-dictionary?e=dog&lc=kn&sl=en&tl=kn
-
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
@@ -11,14 +9,19 @@ def get_kannada_word(search_word):
 
 	soup = BeautifulSoup(page, 'html.parser')
 
-	res_list = soup.find('ol', attrs={'class':'eirol'})
+	res_list = soup.find_all("div", {"id" : "ehresults"}).find_all('ol', {'class' : 'eirol'}) #.find('li').find('a')
 
-	res = res_list.text
+	for ol in res_list:
+		li = ol.find_all('li')
+		for a in li:
+			print(a.find(text=True))
 
-	print(res)
+
+	# res = res_list.text
+
+	print(res_list)
 
 
 search_word = "bank"
 
 get_kannada_word(search_word)
-
