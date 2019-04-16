@@ -4,3 +4,5 @@ data.vec
 venv
 Kannada
 dataset*.txt
+*.json
+.ipynb_checkpoints
