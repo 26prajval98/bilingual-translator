@@ -121,6 +121,9 @@
 14.1	ಧರ್ಮಸ್ಥಳ	N__NNP	<fs af='ಧರ್ಮಸ್ಥಳ,n,,sg,3,d,0,0' name='ಧರ್ಮಸ್ಥಳ'>
 14.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',11'>
 	))
+</Sentence>
+
+<Sentence id='13777'>
 15	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP' dmrel='ccof:NULL__CCP13'>
 15.1	NULL	CC__CCD	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL'>
 	))
@@ -159,6 +162,9 @@
 25.1	ಶ್ರೀರಂಗನಪಟ್ಟಣ	N__NNP	<fs af='ಶ್ರೀರಂಗನಪಟ್ಟಣ,n,,sg,3,d,0,0' name='ಶ್ರೀರಂಗನಪಟ್ಟಣ'>
 25.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',15'>
 	))
+</Sentence>
+
+<Sentence id='13777'>
 26	((	NULL__VGNF	<fs af=',,,,,,,' name='NULL__VGNF' dmrel='ccof:NULL__CCP13'>
 26.1	NULL	V__VM__VNF	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL2'>
 	))
@@ -187,6 +193,9 @@
 33.1	ಕಬ್ಬನ್	N__NNP	<fs af='ಕಬ್ಬನ್,n,,sg,3,d,0,0' name='ಕಬ್ಬನ್'>
 33.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',18'>
 	))
+</Sentence>
+
+<Sentence id='13777'>
 34	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP2' dmrel='ccof:NULL__CCP13'>
 34.1	NULL	CC__CCD	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL3'>
 	))
@@ -202,6 +211,8 @@
 37.1	ಅಲಸೂರು	N__NNP	<fs af='ಅಲಸೂರು,n,,sg,3,d,0,0' name='ಅಲಸೂರು'>
 37.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',20'>
 	))
+
+
 38	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP3' dmrel='ccof:NULL__VGNF2'>
 38.1	NULL	CC__CCD	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL4'>
 	))
@@ -212,6 +223,9 @@
 40.1	ಕೆರೆಗಳು	N__NN	<fs af='ಕೆರೆ,n,,pl,3,o,ಗಳು,galYu' name='ಕೆರೆಗಳು'>
 40.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',21'>
 	))
+</Sentence>
+
+<Sentence id='13777'>
 41	((	NULL__VGNF	<fs af=',,,,,,,' name='NULL__VGNF2' dmrel='ccof:NULL__CCP13'>
 41.1	NULL	V__VM__VNF	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL5'>
 	))
@@ -231,6 +245,9 @@
 46.1	ಪ್ರತಿಮೆ	N__NN	<fs af='ಪ್ರತಿಮೆ,n,,sg,3,d,0,0' name='ಪ್ರತಿಮೆ'>
 46.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',22'>
 	))
+</Sentence>
+
+<Sentence id='13777'>
 47	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP4' dmrel='ccof:NULL__CCP13'>
 47.1	NULL	CC__CCD	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL6'>
 	))
@@ -246,6 +263,9 @@
 50.1	ಶಿವಗಂಗೆ	N__NNP	<fs af='ಶಿವಗಂಗೆ,n,,sg,3,d,0,0' name='ಶಿವಗಂಗೆ'>
 50.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',24'>
 	))
+</Sentence>
+
+<Sentence id='13777'>
 51	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP5' dmrel='ccof:NULL__CCP13'>
 51.1	NULL	CC__CCD	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL7'>
 	))
@@ -265,6 +285,9 @@
 55.1	ಸಿದ್ದಗಂಗೆ	N__NNP	<fs af='ಸಿದ್ದಗಂಗೆ,n,,sg,3,d,0,0' name='ಸಿದ್ದಗಂಗೆ'>
 55.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',26'>
 	))
+</Sentence>
+
+<Sentence id='13777'>
 56	((	NULL__VGNF	<fs af=',,,,,,,' name='NULL__VGNF3' dmrel='ccof:NULL__CCP13'>
 56.1	NULL	V__VM__VNF	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL8'>
 	))
@@ -286,6 +309,9 @@
 61.2	ಸುಬ್ರಮಣ್ಯ	N__NNP	<fs af='ಸುಬ್ರಮಣ್ಯ,n,m,sg,3,d,0,0' name='ಸುಬ್ರಮಣ್ಯ'>
 61.3	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',27'>
 	))
+</Sentence>
+
+<Sentence id='13777'>
 62	((	NULL__VGNF	<fs af=',,,,,,,' name='NULL__VGNF4' dmrel='ccof:NULL__CCP13'>
 62.1	NULL	V__VM__VNF	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL9'>
 	))
@@ -361,10 +387,12 @@
 	))
 83	((	NP	<fs af=',,,,,,,' name='NP62' drel='ccof:NULL__CCP6'>
 83.1	ಮಲಪ್ರಭ	N__NNP	<fs af='ಮಲಪ್ರಭ,n,f,sg,3,d,0,0' name='ಮಲಪ್ರಭ'>
-83.2	-	RD__SYM	<fs af='-,punc,,,,,,' name='-'>
 83.3	ಘಟಪ್ರಭಾ	N__NNP	<fs af='ಘಟಪ್ರಭಾ,n,f,sg,3,d,0,0' name='ಘಟಪ್ರಭಾ'>
 83.4	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',32'>
 	))
+</Sentence>
+
+<Sentence id='13777'>
 84	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP6' dmrel='ccof:NULL__CCP13'>
 84.1	NULL	CC__CCD	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL10'>
 	))
@@ -386,18 +414,15 @@
 89	((	VGNF	<fs af=',,,,,,,' name='VGNF8' drel='k4:NULL__VGNF5'>
 89.1	ನೋಡಬಯಸುವವರಿಗೆ	V__VM__VNF	<fs af='ನೋಡು,v,,sg,3,o,ಅ+ಬಯಸು+ಉವ್+ಅ+ಅವರು+ಇ+ಇಗೆ,a+bayasu+uv+avaru+i+igeV' name='ನೋಡಬಯಸುವವರಿಗೆ'>
 	))
-90	((	NULL__NP	<fs af=',,,,,,,' name='NULL__NP' dmrel='k1:NULL__VGNF5'>
-90.1	NULL	N__NNP	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL11'>
-	))
-91	((	NULL__VGNF	<fs af=',,,,,,,' name='NULL__VGNF5' dmrel='ccof:NULL__CCP13'>
-91.1	NULL	V__VM__VNF	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL12'>
-	))
 92	((	NP	<fs af=',,,,,,,' name='NP67' drel='ccof:NULL__CCP7'>
 92.1	ಶಿವಮೊಗ್ಗ	N__NNP	<fs af='ಶಿವಮೊಗ್ಗ,n,,sg,3,d,0,0' name='ಶಿವಮೊಗ್ಗ'>
 92.2	-	RD__SYM	<fs af='-,punc,,,,,,' name='-2'>
 92.3	ಚಿಕ್ಕಮಗಳೂರು	N__NNP	<fs af='ಚಿಕ್ಕಮಗಳೂರು,n,,sg,3,d,0,0' name='ಚಿಕ್ಕಮಗಳೂರು'>
 92.4	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',35'>
 	))
+</Sentence>
+
+<Sentence id='13777'>
 93	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP7' dmrel='ccof:NULL__CCP13'>
 93.1	NULL	CC__CCD	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL13'>
 	))
@@ -428,6 +453,9 @@
 100.1	ಶಿವಮೊಗ್ಗ	N__NNP	<fs af='ಶಿವಮೊಗ್ಗ,n,,sg,3,d,0,0' name='ಶಿವಮೊಗ್ಗ2'>
 100.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',37'>
 	))
+</Sentence>
+
+<Sentence id='13777'>
 101	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP8' dmrel='k1:NULL__VGNF6'>
 101.1	NULL	CC__CCD	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL14'>
 	))
@@ -435,6 +463,9 @@
 102.1	ಮ್ಯೆಸೂರು	N__NNP	<fs af='ಮ್ಯೆಸೂರು,n,,sg,3,d,0,0' name='ಮ್ಯೆಸೂರು'>
 102.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',38'>
 	))
+</Sentence>
+
+<Sentence id='13777'>
 103	((	NULL__VGNF	<fs af=',,,,,,,' name='NULL__VGNF6' dmrel='ccof:NULL__CCP13'>
 103.1	NULL	V__VM__VNF	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL15'>
 	))
@@ -448,16 +479,16 @@
 106.1	ಚನ್ನಪಟ್ಟಣ	N__NNP	<fs af='ಚನ್ನಪಟ್ಟಣ,n,,sg,3,d,0,0' name='ಚನ್ನಪಟ್ಟಣ'>
 106.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',39'>
 	))
-107	((	NULL__VGNF	<fs af=',,,,,,,' name='NULL__VGNF7' dmrel='ccof:NULL__CCP13'>
-107.1	NULL	V__VM__VNF	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL16'>
-	))
+</Sentence>
+
+<Sentence id='13777'>
 108	((	NP	<fs af=',,,,,,,' name='NP78' drel='ccof:NULL__CCP9'>
 108.1	ಸೀರೆ	N__NN	<fs af='ಸೀರೆ,n,,sg,3,d,0,0' name='ಸೀರೆ'>
 108.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',40'>
 	))
-109	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP9' dmrel='k4:NULL__VGNF8'>
-109.1	NULL	CC__CCD	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL17'>
-	))
+</Sentence>
+
+<Sentence id='13777'>
 110	((	NP	<fs af=',,,,,,,' name='NP79' drel='ccof:NULL__CCP9'>
 110.1	ವಸ್ತ್ರಗಳಿಗೆ	N__NN	<fs af='ವಸ್ತ್ರ,n,,pl,3,o,ಗಳು+ಇ+ಇಗೆ,galYu+i+igeV' name='ವಸ್ತ್ರಗಳಿಗೆ'>
 	))
@@ -469,15 +500,17 @@
 112.1	ಮೊಳಕಾಲ್ಮೂರು	N__NNP	<fs af='ಮೊಳಕಾಲ್ಮೂರು,n,,sg,3,d,0,0' name='ಮೊಳಕಾಲ್ಮೂರು'>
 112.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',42'>
 	))
-113	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP10' dmrel='k1:NULL__VGNF8'>
-113.1	NULL	CC__CCD	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL18'>
+</Sentence>
+
+<Sentence id='13777'>
 	))
 114	((	NP	<fs af=',,,,,,,' name='NP82' drel='ccof:NULL__CCP10'>
 114.1	ದಾವಣಗೆರೆ	N__NNP	<fs af='ದಾವಣಗೆರೆ,n,,sg,3,d,0,0' name='ದಾವಣಗೆರೆ'>
 114.2	;	RD__PUNC	<fs af=';,punc,,,,,,' name=';'>
 	))
-115	((	NULL__VGNF	<fs af=',,,,,,,' name='NULL__VGNF8' dmrel='ccof:NULL__CCP13'>
-115.1	NULL	V__VM__VNF	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL19'>
+</Sentence>
+
+<Sentence id='13777'>
 	))
 116	((	NP	<fs af=',,,,,,,' name='NP83' drel='k2:VGNF10'>
 116.1	ನಾಲಿಗೆ	N__NN	<fs af='ನಾಲಿಗೆ,n,,sg,3,d,0,0' name='ನಾಲಿಗೆ'>
@@ -539,8 +572,9 @@
 132.3	ದಾಳಿಂಬೆ	N__NN	<fs af='ದಾಳಿಂಬೆ,n,,sg,3,d,0,0' name='ದಾಳಿಂಬೆ'>
 132.4	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',46'>
 	))
-133	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP11' dmrel='ccof:NULL__VGNF9'>
-133.1	NULL	CC__CCD	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL20'>
+</Sentence>
+
+<Sentence id='13777'>
 	))
 134	((	NP	<fs af=',,,,,,,' name='NP97' drel='r6:NP98'>
 134.1	ಕೊಡಗಿನ	N__NNP	<fs af='ಕೊಡಗು,n,,sg,3,o,ಇ+ಇನ್+ಅ,i+in+a' name='ಕೊಡಗಿನ2'>
@@ -559,16 +593,18 @@
 138.1	ಕಿತ್ತಳೆಗಳು	N__NN	<fs af='ಕಿತ್ತಳೆ,n,,pl,3,o,ಗಳು,galYu' name='ಕಿತ್ತಳೆಗಳು'>
 138.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',48'>
 	))
-139	((	NULL__VGNF	<fs af=',,,,,,,' name='NULL__VGNF9' dmrel='ccof:NULL__CCP13'>
-139.1	NULL	V__VM__VNF	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL21'>
+</Sentence>
+
+<Sentence id='13777'>
 	))
 140	((	NP	<fs af=',,,,,,,' name='NP101' drel='ccof:NULL__CCP12'>
 140.1	ಮೈಸೂರು	N__NNP	<fs af='ಮೈಸೂರು,n,,sg,3,d,0,0' name='ಮೈಸೂರು2'>
 140.2	ಮಲ್ಲಿಗೆ	N__NN	<fs af='ಮಲ್ಲಿಗೆ,n,,sg,3,d,0,0' name='ಮಲ್ಲಿಗೆ'>
 140.3	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',49'>
 	))
-141	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP12' dmrel='ccof:NULL__CCP13'>
-141.1	NULL	CC__CCD	<fs af=',,,,,,,' mtype='non-gap' troot='' name='NULL22'>
+</Sentence>
+
+<Sentence id='13777'>
 	))
 142	((	NP	<fs af=',,,,,,,' name='NP102' drel='ccof:NULL__CCP12'>
 142.1	ವೀಳ್ಯೆದೆಲೆ	N__NN	<fs af='ವೀಳ್ಯೆದೆಲೆ,n,,sg,3,d,0,0' name='ವೀಳ್ಯೆದೆಲೆ'>
@@ -587,8 +623,9 @@
 146.1	ರಸಬಾಳೆ	N__NN	<fs af='ರಸಬಾಳೆ,n,,sg,3,d,0,0' name='ರಸಬಾಳೆ'>
 146.2	,	RD__PUNC	<fs af='COMMA,punc,,,,,,' name=',50'>
 	))
-147	((	NULL__CCP	<fs af=',,,,,,,' name='NULL__CCP13' dmrel='ccof:CCP7'>
-147.1	NULL	CC__CCD	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL23'>
+</Sentence>
+
+<Sentence id='13777'>
 	))
 148	((	NP	<fs af=',,,,,,,' name='NP106' drel='k7t:VGINF2'>
 148.1	ಬೇಸಿಗೆಯಲ್ಲಿ	N__NN	<fs af='ಬೇಸಿಗೆ,n,,sg,3,o,ಇಯ್+ಅ+ಅಲ್ಲಿ,iy+a+alli' name='ಬೇಸಿಗೆಯಲ್ಲಿ'>
@@ -610,9 +647,9 @@
 153.1	ಕಲ್ಲಂಗಡಿ	N__NN	<fs af='ಕಲ್ಲಂಗಡಿ,n,,sg,3,d,0,0' name='ಕಲ್ಲಂಗಡಿ'>
 153.2	ಹಣ್ಣು	N__NN	<fs af='ಹಣ್ಣು,n,,sg,3,d,0,0' name='ಹಣ್ಣು2'>
 	))
-154	((	NULL__VGNF	<fs af=',,,,,,,' name='NULL__VGNF10' dmrel='ccof:NULL__CCP13'>
-154.1	NULL	V__VM__VNF	<fs af=',,,,,,,' troot='' mtype='non-gap' name='NULL24'>
-	))
+</Sentence>
+
+<Sentence id='13777'>
 155	((	CCP	<fs af=',,,,,,,' name='CCP7' drel='rs:VGNF11'>
 155.1	ಹೀಗೆ	CC__CCS	<fs af='ಹೀಗೆ,avy,,,,d,0,0' name='ಹೀಗೆ'>
 	))

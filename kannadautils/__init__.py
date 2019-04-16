@@ -1,7 +1,9 @@
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 from nltk.corpus import words
-
+import json
+import os
+from collections import defaultdict
 
 def get_kannada_word(search_word):
 	vals = []
@@ -27,6 +29,30 @@ def return_english(sentence):
 			return i, sentence[i]
 
 	return -1, None
+
+
+def load_json(path, file):
+	print(path, file)
+	os.chdir(path)
+	if not os.path.isfile(file):
+		raise FileNotFoundError
+
+	f = open(file, "r", encoding="utf-8")
+
+	json_data = json.loads(f.read())
+
+	b = defaultdict(lambda : defaultdict(lambda: 0.2))
+
+	for t in json_data:
+		string = t[:]
+		t1, t2 = string.split(":", 1)
+		if t1 == "None":
+			t1 = None
+		if t2 == "None":
+			t2 = None
+		b[(t1, t2)] = json_data[string]
+
+	return b
 
 
 if __name__ == "__main__":
