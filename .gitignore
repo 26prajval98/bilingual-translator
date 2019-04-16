@@ -3,7 +3,4 @@
 data.vec
 venv
 Kannada
-dataset.txt
-dataset (1).txt
-dataset (2).txt
-dataset (3).txt
+dataset*
