@@ -50,7 +50,7 @@ def get_sentences(fname, file):
     return
 
 
-data_sets = 14
+data_sets = 13
 sets = [i+1 for i in range(data_sets)]
 
 for i in sets:
