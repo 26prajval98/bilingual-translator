@@ -36,6 +36,7 @@ def get_sentences(fname, file):
             for j in range(len(t)):
                 new_word = t[j]
                 if new_word != ",":
+                    new_word = new_word.replace(",", "")
                     for k in range(len(temp_sentences2)):
                         if new_word != "":
                             ns = temp_sentences2[k] + new_word + " "
