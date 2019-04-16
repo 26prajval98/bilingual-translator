@@ -5,6 +5,7 @@ import json
 import os
 from collections import defaultdict
 
+
 def get_kannada_word(search_word):
 	vals = []
 	dict_page = 'https://www.shabdkosh.com/search-dictionary?e='+search_word+'&lc=kn&sl=en&tl=kn'
@@ -19,7 +20,9 @@ def get_kannada_word(search_word):
 		li = ol.find_all('li')
 		for a in li:
 			for x in a.find_all('a'):
-				vals.append(x.text)
+				t = x.text
+				if len(t.split(' ')) <= 1:
+					vals.append(t)
 	return vals
 
 
@@ -32,7 +35,6 @@ def return_english(sentence):
 
 
 def load_json(path, file):
-	print(path, file)
 	os.chdir(path)
 	if not os.path.isfile(file):
 		raise FileNotFoundError
@@ -56,5 +58,5 @@ def load_json(path, file):
 
 
 if __name__ == "__main__":
-	sw = "bank"
+	sw = "name"
 	print(get_kannada_word(sw))
