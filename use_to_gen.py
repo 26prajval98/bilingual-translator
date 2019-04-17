@@ -52,10 +52,10 @@ def get_sentences(fname, file):
     return
 
 
-data_sets = 1
+data_sets = 14
 sets = [i+1 for i in range(data_sets)]
 
 for i in sets:
     # Change i here
-    f = open("datasetnew " + str(i) + ".txt", "a+", encoding="utf-8")
-    get_sentences("testing.txt", f)
+    f = open("dataset %d.txt" % i, "a+", encoding="utf-8")
+    get_sentences("data (%d).txt" % i, f)

@@ -36,23 +36,22 @@ def return_english(sentence):
 
 def load_json(path, file):
 	os.chdir(path)
-	if not os.path.isfile(file):
-		raise FileNotFoundError
+	b = defaultdict(lambda: defaultdict(lambda: 0.2))
+	if os.path.isfile(file):
+		f = open(file, "r", encoding="utf-8")
 
-	f = open(file, "r", encoding="utf-8")
+		json_data = json.loads(f.read())
 
-	json_data = json.loads(f.read())
+		b = defaultdict(lambda : defaultdict(lambda: 0.2))
 
-	b = defaultdict(lambda : defaultdict(lambda: 0.2))
-
-	for t in json_data:
-		string = t[:]
-		t1, t2 = string.split(":", 1)
-		if t1 == "None":
-			t1 = None
-		if t2 == "None":
-			t2 = None
-		b[(t1, t2)] = json_data[string]
+		for t in json_data:
+			string = t[:]
+			t1, t2 = string.split(":", 1)
+			if t1 == "None":
+				t1 = None
+			if t2 == "None":
+				t2 = None
+			b[(t1, t2)] = json_data[string]
 
 	return b
 
