@@ -42,7 +42,7 @@ def load_json(path, file):
 
 		json_data = json.loads(f.read())
 
-		b = defaultdict(lambda : defaultdict(lambda: 0.2))
+		b = defaultdict(lambda: defaultdict(lambda: 0.2))
 
 		for t in json_data:
 			string = t[:]
