@@ -34,39 +34,6 @@ def return_english(sentence):
 	return -1, None
 
 
-def calculate_prob(t_a, m):
-	t = [None, None]
-	prob = 1
-	for ww in t_a:
-		prob_t = m[tuple(t)].get(ww, None)
-		if prob_t is None:
-			prob *= 10 ** -10
-		t.append(ww)
-	return prob
-
-
-def get_sentence(sentence, model):
-	sentence_array = sentence.split(" ")
-
-	idx, word = return_english(sentence_array)
-
-	if idx != -1:
-		wws = get_kannada_word(word)
-		p = - 100
-		chosen_word = ""
-		t_array = sentence_array[:]
-		for w in wws:
-			t_array[idx] = w
-			t = calculate_prob(t_array, model)
-			if t > p:
-				p = t
-				chosen_word = w
-
-		t_array[idx] = chosen_word
-		print("New sentence : ", t_array)
-		return t_array
-
-
 def load_json(path, file):
 	os.chdir(path)
 	b = defaultdict(lambda: defaultdict(lambda: 0.2))
@@ -75,7 +42,7 @@ def load_json(path, file):
 
 		json_data = json.loads(f.read())
 
-		b = defaultdict(lambda: defaultdict(lambda: 0.2))
+		b = defaultdict(lambda: defaultdict(lambda: 10 ** -20))
 
 		for t in json_data:
 			string = t[:]
@@ -89,6 +56,45 @@ def load_json(path, file):
 	return b
 
 
+def calculate_prob(t_a, m):
+	t = [None, None]
+	prob = 1
+	for ww in t_a:
+		prob_t = m[tuple(t[-2:])].get(ww, 10 ** -20)
+		prob *= prob_t
+		t.append(ww)
+	return prob
+
+
+def get_sentence(sentence, model):
+	sentence_array = sentence.split(" ")
+
+	idx, word = return_english(sentence_array)
+
+	if idx != -1:
+		wws = get_kannada_word(word)
+
+		if len(wws) == 0:
+			return []
+
+		p = - 100
+		chosen_word = ""
+		t_array = sentence_array[:]
+		for w in wws:
+			t_array[idx] = w
+			t = calculate_prob(t_array, model)
+			if t > p:
+				p = t
+				chosen_word = w
+
+		t_array[idx] = chosen_word
+		return t_array
+
+
 if __name__ == "__main__":
-	sw = "name"
+	sw = "net"
 	print(get_kannada_word(sw))
+	mo = load_json("E:/NITK/6th Sem/Computer Graphics/kannada-rocks", "data.json")
+
+	ss = "ಆಗ ನಮ್ಮೂರಿನ crow ನೆಂಟರು ಬೇರೆ ಬಂದಿದ್ದಾರೆ ಎಂದು ಆಗುತ್ತದೆ"
+	updated = get_sentence(ss, mo)
