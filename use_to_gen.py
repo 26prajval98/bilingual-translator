@@ -18,7 +18,6 @@ def get_sentences(fname, file):
         x = re.sub(r"\t", "", x)
         x = re.sub(r"[A-Za-z]|_|\)\)\n|\(\(|[0-9]+\.[0-9]+", "", x)
         x = re.split(r"[0-9]+\n", x)
-
         for i in range(len(x)):
             x[i] = re.sub(r"[0-9]", "", x[i])
             x[i] = re.split("\n", x[i])[0:-1]
@@ -46,16 +45,17 @@ def get_sentences(fname, file):
                         temp_sentences.append(ns)
         # print(temp_sentences)
         txt = "\n".join(temp_sentences)
+        txt = "\n" + txt
         file.write(txt)
         p += 1
         print("Progress ", p/p_total)
     return
 
 
-data_sets = 14
+data_sets = 1
 sets = [i+1 for i in range(data_sets)]
 
 for i in sets:
     # Change i here
-    f = open("dataset " + str(i) + ".txt", "a+", encoding="utf-8")
-    get_sentences("data (" + str(i) + ").txt", f)
+    f = open("datasetnew " + str(i) + ".txt", "a+", encoding="utf-8")
+    get_sentences("testing.txt", f)
