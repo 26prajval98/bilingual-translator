@@ -34,6 +34,39 @@ def return_english(sentence):
 	return -1, None
 
 
+def calculate_prob(t_a, m):
+	t = [None, None]
+	prob = 1
+	for ww in t_a:
+		prob_t = m[tuple(t)].get(ww, None)
+		if prob_t is None:
+			prob *= 10 ** -10
+		t.append(ww)
+	return prob
+
+
+def get_sentence(sentence, model):
+	sentence_array = sentence.split(" ")
+
+	idx, word = return_english(sentence_array)
+
+	if idx != -1:
+		wws = get_kannada_word(word)
+		p = - 100
+		chosen_word = ""
+		t_array = sentence_array[:]
+		for w in wws:
+			t_array[idx] = w
+			t = calculate_prob(t_array, model)
+			if t > p:
+				p = t
+				chosen_word = w
+
+		t_array[idx] = chosen_word
+		print("New sentence : ", t_array)
+		return t_array
+
+
 def load_json(path, file):
 	os.chdir(path)
 	b = defaultdict(lambda: defaultdict(lambda: 0.2))
