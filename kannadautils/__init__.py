@@ -56,6 +56,25 @@ def load_json(path, file):
 	return b
 
 
+def load_json_bi(path, file):
+	os.chdir(path)
+	b = defaultdict(lambda: defaultdict(lambda: 0.2))
+	if os.path.isfile(file):
+		f = open(file, "r", encoding="utf-8")
+
+		json_data = json.loads(f.read())
+
+		b = defaultdict(lambda: defaultdict(lambda: 10 ** -20))
+
+		for t in json_data:
+			if t == "null" or t == "None":
+				b[None] = json_data[t]
+			else:
+				b[t] = json_data[t]
+
+	return b
+
+
 def calculate_prob(t_a, m):
 	t = [None, None]
 	prob = 1
@@ -66,7 +85,17 @@ def calculate_prob(t_a, m):
 	return prob
 
 
-def get_sentence(sentence, model):
+def calculate_prob_bi(t_a, m):
+	t = None
+	prob = 1
+	for ww in t_a:
+		prob_t = m[t].get(ww, 10 ** -20)
+		prob *= prob_t
+		t = ww
+	return prob
+
+
+def get_sentence(sentence, model, n=3):
 	sentence_array = sentence.split(" ")
 
 	idx, word = return_english(sentence_array)
@@ -82,7 +111,10 @@ def get_sentence(sentence, model):
 		t_array = sentence_array[:]
 		for w in wws:
 			t_array[idx] = w
-			t = calculate_prob(t_array, model)
+			if n == 3:
+				t = calculate_prob(t_array, model)
+			else:
+				t = calculate_prob_bi(t_array, model)
 			if t > p:
 				p = t
 				chosen_word = w

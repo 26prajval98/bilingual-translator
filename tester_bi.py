@@ -1,6 +1,6 @@
 from kannadautils import *
 
-F = "data.json"
+F = "data_bi.json"
 model = load_json(os.getcwd(), F)
 
 for w1_w2 in model:
